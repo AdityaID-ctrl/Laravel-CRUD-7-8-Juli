@@ -15,18 +15,15 @@
 -- Membuang data untuk tabel db_restapi.barangs: ~2 rows (lebih kurang)
 /*!40000 ALTER TABLE `barangs` DISABLE KEYS */;
 INSERT INTO `barangs` (`id_barang`, `nama_barang`, `stok`, `created_at`, `updated_at`) VALUES
-	(1, 'Meja', 45, NULL, '2022-07-07 04:41:04'),
-	(2, 'Tas', 3, '2022-07-06 09:17:46', '2022-07-07 02:02:43'),
-	(4, 'Sapu', 32, '2022-07-07 04:42:07', '2022-07-07 04:42:07'),
-	(5, 'Tissue', 1, '2022-07-07 05:02:25', '2022-07-07 05:02:25'),
-	(7, 'Lap', 1, '2022-07-07 06:14:22', '2022-07-07 06:14:22');
+	(1, 'Lap', 123, '2022-07-08 04:05:19', '2022-07-08 04:05:19'),
+	(2, 'Gelas', 98, '2022-07-08 06:14:22', '2022-07-08 06:14:22');
 /*!40000 ALTER TABLE `barangs` ENABLE KEYS */;
 
 -- Membuang data untuk tabel db_restapi.failed_jobs: ~0 rows (lebih kurang)
 /*!40000 ALTER TABLE `failed_jobs` DISABLE KEYS */;
 /*!40000 ALTER TABLE `failed_jobs` ENABLE KEYS */;
 
--- Membuang data untuk tabel db_restapi.migrations: ~5 rows (lebih kurang)
+-- Membuang data untuk tabel db_restapi.migrations: ~6 rows (lebih kurang)
 /*!40000 ALTER TABLE `migrations` DISABLE KEYS */;
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 	(1, '2014_10_12_000000_create_users_table', 1),
@@ -34,7 +31,7 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 	(3, '2019_08_19_000000_create_failed_jobs_table', 1),
 	(4, '2019_12_14_000001_create_personal_access_tokens_table', 1),
 	(5, '2022_07_06_064801_create_programs_table', 1),
-	(6, '2022_07_06_080121_create_barangs_table', 2);
+	(6, '2022_07_06_080121_create_barangs_table', 1);
 /*!40000 ALTER TABLE `migrations` ENABLE KEYS */;
 
 -- Membuang data untuk tabel db_restapi.password_resets: ~0 rows (lebih kurang)
@@ -47,12 +44,12 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 
 -- Membuang data untuk tabel db_restapi.programs: ~0 rows (lebih kurang)
 /*!40000 ALTER TABLE `programs` DISABLE KEYS */;
-INSERT INTO `programs` (`id`, `name`, `desc`, `created_at`, `updated_at`) VALUES
-	(1, 'Adit', 'Projek Laravel', '2022-07-06 07:29:14', '2022-07-06 07:29:14');
 /*!40000 ALTER TABLE `programs` ENABLE KEYS */;
 
--- Membuang data untuk tabel db_restapi.users: ~0 rows (lebih kurang)
+-- Membuang data untuk tabel db_restapi.users: ~1 rows (lebih kurang)
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` (`id`, `user`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
+	(2022, 'aditya', '$2y$10$5jJN8S1XFETz/TnFqlVUL.p2GThD8sc7Xu40rHKBctE9uFxF5Kaoa', NULL, '2022-07-08 04:08:14', '2022-07-08 04:08:14');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
