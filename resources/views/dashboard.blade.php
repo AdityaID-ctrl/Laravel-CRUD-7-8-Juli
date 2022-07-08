@@ -14,7 +14,8 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-header ">
-                            <h3 class="card-title position-relative">Aset Barang</h3>
+                            <h3 class="card-title position-relative text-center">Aset Barang</h3>
+                            <a role="button" href="{{ route('keluar')}}" class="btn btn-danger">Logout</a>
                         </div>
                         <div class="card-body">
                             <table class="table table-bordered">

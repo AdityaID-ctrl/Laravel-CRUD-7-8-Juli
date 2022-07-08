@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('login');
 });
 
 
@@ -27,3 +27,6 @@ Route::post('form-input', [App\Http\Controllers\WebController::class, 'store']);
 Route::get('/edit/{id}', [App\Http\Controllers\WebController::class, 'edit']);
 Route::post('/update', [App\Http\Controllers\WebController::class, 'update']);
 Route::get('/dashboard/{id}', [App\Http\Controllers\WebController::class, 'destroy']);
+Route::get('/login', [App\Http\Controllers\LoginController::class, 'index']);
+Route::post('/postlogin', [App\Http\Controllers\LoginController::class, 'sLogin'])->name('sLogin');
+Route::get('logout', [App\Http\Controllers\LoginController::class, 'keluar'])->name('keluar');
